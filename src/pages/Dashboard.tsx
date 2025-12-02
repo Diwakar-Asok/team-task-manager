@@ -3,7 +3,6 @@ import { useAppSelector } from '../stores/hooks'
 
 export default function Dashboard() {
   const projects = useAppSelector((s) => s.projects.items)
-  const currentUser = useAppSelector((s) => s.users.items.find((u) => u.id === s.users.currentUserId))
   const tasks = useAppSelector((s) => s.tasks.items)
   const navigate = useNavigate()
 
