@@ -1,73 +1,69 @@
-# React + TypeScript + Vite
+# Trackify
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Trackify is a modern team-based project and task management system built using **React 19 + TypeScript + Vite**.  
+It includes role-based access (Admin & Member), project creation, task assignment, board view, team management, and local persistence — all wrapped in a clean, intuitive UI.
 
-Currently, two official plugins are available:
+This project showcases real-world frontend architecture using modern React patterns, Redux Toolkit, Tailwind CSS styling, and a fully responsive dashboard.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🔐 **Role-Based Access**
+- **Admin**: Can create projects, manage team members, and assign roles.  
+- **Member**: Can view assigned projects and create/assign tasks.  
+- Conditional UI rendering based on permissions (Admin-only actions hidden for Members).
 
-## Expanding the ESLint configuration
+### 📁 **Project Management**
+- Create, update, and delete projects  
+- View project details, task statistics, and contributors  
+- Clean dashboard with key metrics (Total Projects, Tasks, In-Progress, Completed)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 📝 **Task Management**
+- Add tasks under projects  
+- Assign tasks to any team member  
+- Update task status (To Do → In Progress → Done)  
+- View tasks inside each project or in kanban board style  
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 🗂 **Kanban Board**
+- Drag-and-drop task movement (To Do, In Progress, Done)  
+- Visual workflow to track team progress  
+- Each task shows its assignee + project tag  
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 👥 **Team Management**
+- Add team members with name & email  
+- Assign roles (Admin / Member)  
+- Remove members  
+- Clear breakdown of role permissions  
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 💾 **Local Persistence**
+- All data (users, projects, tasks, roles) is stored using **localStorage**  
+- Data persists across refresh  
+- Ideal for interviews, demos, and offline usage  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 🎨 **Clean & Modern UI**
+- Fully responsive layout  
+- Sidebar navigation  
+- Dashboard cards  
+- Custom Trackify branding and icon  
+- Tailwind CSS-based design system  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠 Tech Stack
+
+| Category | Technology |
+|---------|------------|
+| UI Framework | **React 19 + TypeScript + Vite** |
+| Styling | **Tailwind CSS** |
+| State Management | **Redux Toolkit (RTK)** |
+| Routing | **React Router 7** |
+| Form Handling | React hooks (useState / controlled forms) |
+| Persistence | LocalStorage |
+| Icons | Lucide / Custom SVGs |
+| Deployment | **Vercel** |
+
+---
+
+## 📂 Project Structure
+
