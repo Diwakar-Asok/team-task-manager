@@ -116,7 +116,7 @@ export default function Board() {
       <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-6 shadow-sm">
         {tasks.length === 0 ? (
           <div className="text-center py-12 bg-white rounded-lg border border-gray-200">
-            <p className="text-gray-500 text-lg">No tasks yet. Create a project and add tasks to get started! 🚀</p>
+            <p className="text-gray-500 text-lg">No tasks yet. Create a project and add tasks to get started!</p>
           </div>
         ) : (
           <DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={handleDragEnd}>

@@ -98,7 +98,7 @@ export default function TaskList() {
       <div className="space-y-3">
         {filteredTasks.length === 0 ? (
           <div className="bg-white rounded-lg shadow-sm p-12 border border-gray-200 text-center">
-            <p className="text-gray-500 text-lg">No tasks yet. Create one to get started! 🚀</p>
+            <p className="text-gray-500 text-lg">No tasks yet. Create one to get started!</p>
           </div>
         ) : (
           filteredTasks.map((t) => {
