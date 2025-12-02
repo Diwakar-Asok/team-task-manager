@@ -71,7 +71,7 @@ export default function Dashboard() {
             <p className="text-gray-500 text-lg mb-4">No projects yet. Create one to get started! 🚀</p>
             <button
               onClick={() => navigate('/projects')}
-              className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition"
+              className="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg transition"
             >
               Create First Project
             </button>
