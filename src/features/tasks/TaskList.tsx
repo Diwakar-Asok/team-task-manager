@@ -69,7 +69,7 @@ export default function TaskList() {
             ))}
           </select>
           <button
-            className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold px-6 py-3 rounded-lg transition shadow-sm"
+            className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-semibold px-6 py-3 rounded-lg transition shadow-sm"
             onClick={onAdd}
           >
             + Add Task

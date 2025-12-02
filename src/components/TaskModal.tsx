@@ -159,6 +159,12 @@ export default function TaskModal({ task, onClose }: Props) {
           {isEditing ? (
             <>
               <button
+                onClick={handleSave}
+                className="px-4 py-2 bg-purple-600 text-white rounded-lg font-medium hover:bg-purple-700 transition"
+              >
+                Save Changes
+              </button>
+              <button
                 onClick={() => {
                   setIsEditing(false)
                   setEditedAssignee(task.assignedTo || '')
@@ -168,18 +174,13 @@ export default function TaskModal({ task, onClose }: Props) {
               >
                 Cancel
               </button>
-              <button
-                onClick={handleSave}
-                className="px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition"
-              >
-                Save Changes
-              </button>
+              
             </>
           ) : (
             <>
               <button
                 onClick={() => setIsEditing(true)}
-                className="px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition"
+                className="px-4 py-2 bg-purple-600 text-white rounded-lg font-medium hover:bg-purple-700 transition"
               >
                 Edit
               </button>

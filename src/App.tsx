@@ -46,7 +46,7 @@ function AppContent() {
     { id: 'dashboard', icon: '📊', label: 'Dashboard', path: '/', roles: ['admin', 'member'] },
     { id: 'projects', icon: '📁', label: 'Projects', path: '/projects', roles: ['admin', 'member'] },
     { id: 'board', icon: '🗂️', label: 'Board', path: '/board', roles: ['admin', 'member'] },
-    { id: 'team', icon: '👥', label: 'Team', path: '/team', roles: ['admin'] }, // Only admins can manage team
+    { id: 'team', icon: '👥', label: 'Teams', path: '/team', roles: ['admin'] }, // Only admins can manage team
   ]
 
   // Filter nav items based on user role
@@ -61,7 +61,7 @@ function AppContent() {
     <div className="flex h-screen bg-gray-50">
       <div className={`${sidebarOpen ? 'w-64' : 'w-20'} bg-gradient-to-b from-slate-700 to-slate-600 text-white transition-all duration-300 shadow-lg`}>
         <div className="p-4 flex items-center justify-between">
-          <img src="../public/Trackify.png" className="w-8 h-8"/>
+          <img  src="/Trackify.png" className="w-8 h-8 rounded" alt="Trackify Logo"/>
           <button onClick={() => setSidebarOpen(!sidebarOpen)} className="p-1 hover:bg-slate-700 rounded">
             {sidebarOpen ? '◀' : '▶'}
           </button>
@@ -73,7 +73,7 @@ function AppContent() {
               to={item.path}
               onClick={() => setCurrentPage(item.id)}
               className={`flex items-center gap-3 px-3 py-2 rounded-lg cursor-pointer transition ${
-                currentPage === item.id ? 'bg-blue-600' : 'hover:bg-slate-700'
+                currentPage === item.id ? 'bg-purple-600' : 'hover:bg-slate-700'
               }`}
             >
               <span className="text-xl">{item.icon}</span>

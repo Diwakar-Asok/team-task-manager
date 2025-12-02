@@ -45,7 +45,7 @@ export default function Projects() {
               onChange={(e) => setDescription(e.target.value)}
             />
             <button
-              className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold px-6 py-3 rounded-lg transition"
+              className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-semibold px-6 py-3 rounded-lg transition"
               onClick={onAdd}
             >
               + Create Project
