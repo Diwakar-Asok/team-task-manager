@@ -59,7 +59,7 @@ export default function Projects() {
         <h2 className="text-xl font-bold text-gray-900 mb-4">Projects ({visibleProjects.length})</h2>
         {visibleProjects.length === 0 ? (
           <div className="bg-white rounded-lg shadow-sm p-12 border border-gray-200 text-center">
-            <p className="text-gray-500 text-lg">No projects yet. {canCreate ? 'Create one to organize your tasks! 📁' : 'Wait for admin to create projects. 📁'}</p>
+            <p className="text-gray-500 text-lg">No projects yet. {canCreate ? 'Create one to organize your tasks!' : 'Wait for admin to create projects.'}</p>
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
