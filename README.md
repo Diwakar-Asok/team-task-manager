@@ -62,8 +62,3 @@ This project showcases real-world frontend architecture using modern React patte
 | Persistence | LocalStorage |
 | Icons | Lucide / Custom SVGs |
 | Deployment | **Vercel** |
-
----
-
-## 📂 Project Structure
-
